@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     { selector: ".countdown-section", class: "scroll-reveal" },
     { selector: ".wooden-toys-divider", class: "scroll-reveal-scale" },
     { selector: ".rsvp-section", class: "scroll-reveal" },
-    { selector: ".quick-icons-section", class: "scroll-reveal" },
     { selector: ".signature-banner-section", class: "scroll-reveal" }
   ];
 

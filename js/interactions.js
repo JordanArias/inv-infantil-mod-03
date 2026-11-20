@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const config = window.INVITATION_CONFIG;
   if (!config) return;
 
-  const mapLinks = document.querySelectorAll(
-    "#venue-map-card, #quick-map-link"
-  );
+  const mapLinks = document.querySelectorAll("#venue-map-card");
   mapLinks.forEach((link) => {
     if (link && config.lugar?.mapsUrl) {
       link.href = config.lugar.mapsUrl;

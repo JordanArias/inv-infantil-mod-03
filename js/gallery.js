@@ -1,6 +1,6 @@
 /**
  * ==========================================================================
- * GALLERY.JS - VISOR LIGHTBOX PARA LA FOTO DEL SOBRE Y ACCESO RÁPIDO
+ * GALLERY.JS - VISOR LIGHTBOX PARA LA FOTO DEL SOBRE
  * INVITACIÓN INFANTIL VINTAGE TEDDY BEAR
  * ==========================================================================
  */
@@ -9,9 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("gallery-lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
   const lightboxClose = document.getElementById("lightbox-close");
-  const clickablePhotos = document.querySelectorAll(
-    ".envelope-photo-trigger, #quick-gallery-btn"
-  );
+  const clickablePhotos = document.querySelectorAll(".envelope-photo-trigger");
 
   if (!lightbox || !lightboxImg) return;
 

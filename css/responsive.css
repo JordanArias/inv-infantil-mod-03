@@ -60,7 +60,7 @@
 
   .kraft-envelope-wrapper {
     max-width: 260px;
-    padding-top: 2.6rem;
+    padding-top: 3rem;
   }
 
   .kraft-envelope-body {
@@ -68,9 +68,13 @@
   }
 
   .kraft-photo-frame {
-    width: 145px;
-    height: 145px;
-    top: -40px;
+    top: -22px;
+  }
+
+  .kraft-envelope-wrapper:hover .kraft-photo-frame,
+  .kraft-envelope-wrapper:focus-visible .kraft-photo-frame,
+  .kraft-envelope-wrapper:active .kraft-photo-frame {
+    transform: translateY(-42px) scale(1.02);
   }
 
   .honoring-main-title {
