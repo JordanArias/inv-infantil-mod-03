@@ -1,0 +1,170 @@
+/* ==========================================================================
+   RESPONSIVE.CSS - ADAPTACIÓN PARA MÓVIL, TABLET, LAPTOP Y PC
+   INVITACIÓN INFANTIL VINTAGE TEDDY BEAR & WOODEN TOYS
+   ========================================================================== */
+
+/* 1. Móviles pequeños (< 380px) */
+@media (max-width: 380px) {
+  .honoring-top-row {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+  }
+
+  .kid-turn-one-title {
+    font-size: 2.3rem;
+  }
+
+  .interactive-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* .rocking-bear-decor {
+    width: 118px;
+  } */
+
+  .cd-number {
+    font-size: 1.5rem;
+  }
+}
+
+/* 2. Tablets y pantallas medianas (>= 768px) */
+@media (min-width: 768px) {
+  .invitation-content-wrap {
+    max-width: 680px;
+    padding: 0 2rem;
+  }
+
+  .sky-cloud {
+    width: 210px !important;
+  }
+
+  .sky-balloon {
+    width: 82px !important;
+  }
+
+  .hero-script-invited {
+    font-size: 3.6rem;
+  }
+
+  .hero-birthday-script {
+    font-size: 4.6rem;
+  }
+
+  .hero-car-artwork {
+    max-width: 370px;
+  }
+
+  .hero-teddy-car-img {
+    max-width: 330px;
+  }
+
+  .kraft-envelope-wrapper {
+    max-width: 260px;
+    padding-top: 2.6rem;
+  }
+
+  .kraft-envelope-body {
+    height: 175px;
+  }
+
+  .kraft-photo-frame {
+    width: 145px;
+    height: 145px;
+    top: -40px;
+  }
+
+  .honoring-main-title {
+    font-size: 1.85rem;
+  }
+
+  .honoring-script-sub {
+    font-size: 2.75rem;
+  }
+
+  .kid-turn-one-title {
+    font-size: 3.35rem;
+  }
+
+  .metadata-strip {
+    padding: 1.15rem 0.75rem;
+  }
+
+  .meta-big-value {
+    font-size: 1.85rem;
+  }
+
+  .meta-venue-name {
+    font-size: 0.76rem;
+  }
+
+  .feature-box {
+    padding: 1.35rem 1.25rem;
+  }
+
+  .program-script-title {
+    font-size: 2rem;
+  }
+
+  .program-list li {
+    font-size: 0.74rem;
+  }
+
+  .rocking-bear-decor {
+    width: 155px;
+  }
+
+  .vinyl-disc {
+    width: 90px;
+    height: 90px;
+  }
+
+  .vinyl-groove-outer {
+    width: 68px;
+    height: 68px;
+  }
+
+  .vinyl-groove-inner {
+    width: 46px;
+    height: 46px;
+  }
+
+  .countdown-frame {
+    max-width: 460px;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .cd-number {
+    font-size: 2.25rem;
+  }
+
+  .wooden-toys-img {
+    max-width: 390px;
+  }
+
+  .celebrate-script-quote {
+    font-size: 2.2rem;
+  }
+
+  .rsvp-section {
+    padding: 1.75rem 2rem 2rem 2rem;
+  }
+
+  .rsvp-form {
+    max-width: 440px;
+  }
+}
+
+/* 3. Laptop y Escritorio (>= 1024px) */
+@media (min-width: 1024px) {
+  .invitation-content-wrap {
+    max-width: 760px;
+  }
+
+  .sky-cloud {
+    width: 250px !important;
+  }
+
+  .sky-balloon {
+    width: 95px !important;
+  }
+}

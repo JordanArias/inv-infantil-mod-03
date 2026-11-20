@@ -1,0 +1,310 @@
+/* ==========================================================================
+   ENVELOPE.CSS - PANTALLA DE BIENVENIDA INTERACTIVA (DISEÑO TEDDY BEAR CAR)
+   Fiel a la pantalla 1 de la imagen de referencia de Stitch AI
+   ========================================================================== */
+
+#envelope-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream-100);
+  background-image:
+    radial-gradient(rgba(216, 207, 190, 0.65) 0.85px, transparent 0.85px),
+    linear-gradient(180deg, #FDFBF7 0%, #FAF6EE 55%, #F2E8D7 100%);
+  background-size: 18px 18px, 100% 100%;
+  padding: 1.1rem;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: opacity 1.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 1.6s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Nubes y globos flotando suavemente detrás de la tarjeta de portada */
+.envelope-floating-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.env-bg-cloud {
+  position: absolute;
+  opacity: 0.72;
+  filter: drop-shadow(0 4px 10px rgba(156, 122, 83, 0.08));
+}
+
+.env-bg-cloud.c-top-left {
+  top: 6%;
+  left: -25px;
+  width: 145px;
+  animation: driftCloudLeftToRight 11s ease-in-out infinite alternate;
+}
+
+.env-bg-cloud.c-top-right {
+  top: 11%;
+  right: -20px;
+  width: 135px;
+  animation: driftCloudRightToLeft 13s ease-in-out infinite alternate;
+}
+
+.env-bg-cloud.c-mid-left {
+  top: 46%;
+  left: -30px;
+  width: 130px;
+  animation: driftCloudLeftToRight 12s ease-in-out infinite alternate -3s;
+}
+
+.env-bg-cloud.c-bot-right {
+  bottom: 7%;
+  right: -15px;
+  width: 150px;
+  animation: driftCloudRightToLeft 14s ease-in-out infinite alternate -2s;
+}
+
+.env-bg-balloon {
+  position: absolute;
+  opacity: 0.78;
+  filter: drop-shadow(0 6px 12px rgba(156, 122, 83, 0.14));
+}
+
+.env-bg-balloon.b-1 {
+  top: 16%;
+  right: 7%;
+  width: 58px;
+  animation: floatBalloon 7s ease-in-out infinite alternate;
+}
+
+.env-bg-balloon.b-2 {
+  bottom: 14%;
+  left: 6%;
+  width: 54px;
+  animation: floatBalloon 8.2s ease-in-out infinite alternate -2.5s;
+}
+
+/* Tarjeta central de bienvenida estilo papelería vintage */
+.envelope-card {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 400px;
+  background: linear-gradient(180deg, #FDFBF7 0%, #FAF6EE 65%, #F4ECE0 100%);
+  border-radius: 2.25rem;
+  border: 2px solid #E6D7C3;
+  box-shadow:
+    0 24px 55px rgba(110, 90, 68, 0.18),
+    0 0 0 6px rgba(255, 255, 255, 0.65),
+    inset 0 2px 8px #FFFFFF;
+  padding: 2rem 1.5rem 1.75rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  overflow: hidden;
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.envelope-card::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border-radius: 1.8rem;
+  border: 1.5px dashed rgba(205, 177, 140, 0.55);
+  pointer-events: none;
+}
+
+/* Estrellas decorativas en la tarjeta de bienvenida */
+.env-star {
+  position: absolute;
+  color: var(--sand-400);
+  user-select: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.env-star.s-1 { top: 22px; left: 26px; font-size: 1.15rem; }
+.env-star.s-2 { top: 52px; right: 28px; font-size: 0.95rem; }
+.env-star.s-3 { top: 145px; left: 24px; font-size: 0.85rem; }
+.env-star.s-4 { bottom: 92px; right: 26px; font-size: 1.05rem; }
+
+/* Encabezado "¡Estás invitado! A una muy especial Celebración de Cumpleaños" */
+.envelope-header {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.env-script-greeting {
+  font-family: var(--font-script);
+  font-size: 2.85rem;
+  font-weight: 400;
+  color: var(--vintage-dark);
+  line-height: 1.1;
+}
+
+.env-serif-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vintage-gray);
+  margin-top: 0.1rem;
+}
+
+.env-birthday-title-wrap {
+  margin-top: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.env-birthday-script {
+  font-family: var(--font-script);
+  font-size: 3.55rem;
+  color: var(--vintage-wood);
+  line-height: 1.02;
+  transform: rotate(-2deg);
+  display: block;
+}
+
+.env-celebration-caps {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--vintage-dark);
+  margin-top: -0.15rem;
+}
+
+/* Ilustración central interactiva: Osito en carro verde con globos */
+.envelope-teddy-stage {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 265px;
+  margin: 0.2rem auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.envelope-teddy-stage:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.env-stage-cloud {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.75;
+  z-index: 1;
+}
+
+.env-stage-cloud.cloud-left {
+  top: 14%;
+  left: -12px;
+  width: 95px;
+  animation: driftCloudLeftToRight 8s ease-in-out infinite alternate;
+}
+
+.env-stage-cloud.cloud-right {
+  top: 22%;
+  right: -12px;
+  width: 100px;
+  animation: driftCloudRightToLeft 9s ease-in-out infinite alternate;
+}
+
+.env-teddy-car-img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 245px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 20px rgba(110, 90, 68, 0.16));
+}
+
+/* Pie de la portada: Botón verde salvia "ABRIR INVITACIÓN" y corazón */
+.envelope-footer {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.envelope-open-btn {
+  width: 100%;
+  max-width: 275px;
+  padding: 0.92rem 1.6rem;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, var(--sage-500) 0%, var(--sage-600) 100%);
+  color: var(--cream-50);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  box-shadow:
+    0 8px 20px rgba(108, 126, 100, 0.34),
+    inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.envelope-open-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(108, 126, 100, 0.42);
+}
+
+.envelope-open-btn:active {
+  transform: scale(0.97);
+}
+
+.env-heart-accent {
+  color: var(--sand-400);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+#envelope-screen.is-opening .envelope-card {
+  transform: translateY(-8px) scale(1.02);
+}
+
+@media (max-width: 360px) {
+  .envelope-card {
+    padding: 1.5rem 1.15rem 1.35rem 1.15rem;
+  }
+  .env-script-greeting {
+    font-size: 2.35rem;
+  }
+  .env-birthday-script {
+    font-size: 2.9rem;
+  }
+  .envelope-teddy-stage {
+    max-width: 215px;
+  }
+}

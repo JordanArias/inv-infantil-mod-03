@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#7E9175" />
+  <title>¡Sofía cumple 1 añito! - Celebración de Cumpleaños</title>
+
+  <!-- Google Fonts: Great Vibes, Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Great+Vibes&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+
+  <!-- Hojas de Estilos Modulares -->
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/envelope.css" />
+  <link rel="stylesheet" href="css/invitation.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       CONTENEDOR PRINCIPAL DE LA INVITACIÓN (VISTA DIRECTA SIN PORTADA MODAL)
+       ==================================================================== -->
+  <main class="main-invitation-container" role="main">
+
+    <!-- GLOBOS PNG Y NUBES (BLANCAS Y CELESTES) ANIMADAS DE FONDO -->
+    <div class="animated-sky-decor" aria-hidden="true">
+      <img src="img/nube_blanca.png" alt="" class="sky-cloud cloud-pos-1" />
+      <img src="img/nube_celeste.png" alt="" class="sky-cloud cloud-pos-2" />
+      <img src="img/nube_blanca.png" alt="" class="sky-cloud cloud-pos-3" />
+      <img src="img/nube_celeste.png" alt="" class="sky-cloud cloud-pos-4" />
+      <img src="img/nube_blanca.png" alt="" class="sky-cloud cloud-pos-5" />
+      <img src="img/nube_celeste.png" alt="" class="sky-cloud cloud-pos-6" />
+      <img src="img/nube_blanca.png" alt="" class="sky-cloud cloud-pos-7" />
+      <img src="img/nube_celeste.png" alt="" class="sky-cloud cloud-pos-8" />
+      <img src="img/nube_blanca.png" alt="" class="sky-cloud cloud-pos-9" />
+      <img src="img/nube_celeste.png" alt="" class="sky-cloud cloud-pos-10" />
+
+      <img src="img/globo_amarillo.png" alt="" class="sky-balloon balloon-pos-1" />
+      <img src="img/globo_verde.png" alt="" class="sky-balloon balloon-pos-2" />
+      <img src="img/globo_rojo.png" alt="" class="sky-balloon balloon-pos-3" />
+      <img src="img/globo_amarillo.png" alt="" class="sky-balloon balloon-pos-4" />
+      <img src="img/globo_verde.png" alt="" class="sky-balloon balloon-pos-5" />
+      <img src="img/globo_rojo.png" alt="" class="sky-balloon balloon-pos-6" />
+      <img src="img/globo_amarillo.png" alt="" class="sky-balloon balloon-pos-7" />
+      <img src="img/globo_verde.png" alt="" class="sky-balloon balloon-pos-8" />
+
+      <span class="sky-star st-1">★</span>
+      <span class="sky-star st-2">★</span>
+      <span class="sky-star st-3">★</span>
+      <span class="sky-star st-4">★</span>
+      <span class="sky-star st-5">★</span>
+      <span class="sky-star st-6">★</span>
+      <span class="sky-star st-7">★</span>
+      <span class="sky-star st-8">★</span>
+    </div>
+
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR STICKY -->
+    <nav class="top-sticky-nav" data-purpose="top-navigation" aria-label="Navegación principal">
+      <div class="top-nav-inner">
+        <a class="top-nav-link" href="#bienvenida">Sobre</a>
+        <a class="top-nav-link" href="#detalles">Inicio</a>
+        <a class="top-nav-link" href="#rsvp">Confirmar</a>
+      </div>
+    </nav>
+
+    <div class="invitation-content-wrap">
+
+      <!-- SECCIÓN 1: HERO / PORTADA CON OSITO EN AUTO VERDE VINTAGE -->
+      <section class="hero-section" id="bienvenida" data-purpose="hero-section">
+        <div class="hero-greeting-block">
+          <h2 class="hero-script-invited">¡Estás invitado!</h2>
+          <p class="hero-serif-special">A una muy especial</p>
+          <div class="hero-birthday-display">
+            <span class="hero-birthday-script">Cumpleaños</span>
+            <span class="hero-celebration-sub">Celebración</span>
+          </div>
+        </div>
+
+        <div class="hero-car-artwork" data-purpose="vintage-car-artwork">
+          <img src="img/nube_blanca.png" alt="" class="hero-inline-cloud c-left" aria-hidden="true" />
+          <img src="img/nube_celeste.png" alt="" class="hero-inline-cloud c-right" aria-hidden="true" />
+          <img src="img/globo_amarillo.png" alt="" class="hero-inline-balloon" aria-hidden="true" />
+          <img src="img/osito_carro.png" alt="Osito en auto verde vintage con globos y regalo"
+            class="hero-teddy-car-img" />
+        </div>
+
+        <div class="hero-cta-wrap">
+          <a href="#detalles" class="sage-pill-btn">Ver Invitación</a>
+          <span class="heart-divider-icon" aria-hidden="true">♥</span>
+        </div>
+      </section>
+
+      <div class="section-divider" aria-hidden="true"></div>
+
+      <!-- SECCIÓN 2: SOBRE KRAFT CON FOTO DE LA NIÑA, DETALLES Y PROGRAMA -->
+      <section class="honoring-section" id="detalles" data-purpose="details-section">
+
+        <div class="honoring-top-row">
+          <div class="kraft-envelope-wrapper envelope-photo-trigger" title="Toca para ampliar la fotografía">
+            <div class="kraft-flap-top" aria-hidden="true"></div>
+            <div class="kraft-envelope-body">
+              <div class="kraft-photo-frame">
+                <img src="img/foto_niña.jpg" alt="Sofía en su primer añito" class="baby-envelope-photo" />
+              </div>
+              <div class="kraft-front-pocket" aria-hidden="true">
+                <div class="kraft-flap-left"></div>
+                <div class="kraft-flap-right"></div>
+                <div class="kraft-flap-bottom"></div>
+              </div>
+              <div class="kraft-heart-seal" aria-hidden="true">♥</div>
+            </div>
+          </div>
+
+          <div class="honoring-text-col">
+            <img src="img/Guirnalda_banderines.png" alt="Guirnalda de banderines acuarela" class="mini-bunting-img" />
+            <span class="join-us-pill">Acompáñanos a una</span>
+            <h2 class="honoring-main-title">
+              Fiesta de
+              <span class="honoring-script-sub">Cumpleaños</span>
+            </h2>
+            <span class="honoring-sage-ribbon">En Honor A</span>
+          </div>
+        </div>
+
+        <div class="kid-turn-one-banner">
+          <h1 class="kid-turn-one-title">
+            <span class="kid-turn-one-star" aria-hidden="true">✦</span>
+            <span>¡Sofía cumple 1 añito!</span>
+            <span class="kid-turn-one-star" aria-hidden="true">✦</span>
+          </h1>
+        </div>
+
+        <div class="metadata-strip" data-purpose="event-metadata">
+          <div class="meta-col">
+            <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <rect height="18" rx="2" stroke-width="1.8" width="18" x="3" y="4"></rect>
+              <line stroke-width="1.8" x1="16" x2="16" y1="2" y2="6"></line>
+              <line stroke-width="1.8" x1="8" x2="8" y1="2" y2="6"></line>
+              <line stroke-width="1.8" x1="3" x2="21" y1="10" y2="10"></line>
+              <circle cx="8" cy="14" fill="currentColor" r="1"></circle>
+              <circle cx="12" cy="14" fill="currentColor" r="1"></circle>
+              <circle cx="16" cy="14" fill="currentColor" r="1"></circle>
+              <circle cx="8" cy="17" fill="currentColor" r="1"></circle>
+            </svg>
+            <span class="meta-top-label">JUNIO</span>
+            <span class="meta-big-value">15</span>
+            <span class="meta-sub-label">2026</span>
+          </div>
+
+          <div class="meta-col">
+            <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" stroke-width="1.8"></circle>
+              <polyline points="12 7 12 12 15 15" stroke-width="1.8"></polyline>
+            </svg>
+            <span class="meta-big-value">04:30</span>
+            <span class="meta-top-label">PM</span>
+          </div>
+
+          <a id="venue-map-card" href="https://maps.google.com/?q=Salon+Jardin+Las+Estrellas" target="_blank"
+            rel="noopener noreferrer" class="meta-col" title="Ver ubicación en Google Maps">
+            <svg class="meta-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-width="1.8">
+              </path>
+              <circle cx="12" cy="9" fill="currentColor" r="2.5"></circle>
+            </svg>
+            <span class="meta-venue-name">SALÓN JARDÍN<br />LAS ESTRELLAS</span>
+            <span class="meta-map-badge">Ver mapa 📍</span>
+          </a>
+        </div>
+
+        <div class="interactive-cards-grid">
+          <div class="feature-box program-box" data-purpose="program-index">
+            <div>
+              <div class="program-box-header">
+                <h3 class="program-script-title">¿Qué hay dentro?</h3>
+                <span class="program-heart" aria-hidden="true">♥</span>
+              </div>
+              <ul class="program-list">
+                <li>• Nuestra Estrellita</li>
+                <li>• Detalles del Evento</li>
+                <li>• Galería de Fotos</li>
+                <li>• Cuenta Regresiva</li>
+              </ul>
+            </div>
+            <img src="img/osito_caballo.png" alt="Osito en caballito mecedor de madera"
+              class="rocking-bear-decor animate-rocking" />
+          </div>
+
+          <div class="feature-box vinyl-box" data-purpose="audio-message-card">
+            <div class="vinyl-top-bow" aria-hidden="true">
+              <svg viewBox="0 0 64 36" fill="none">
+                <path d="M28 18C18 6 4 8 6 19C8 28 20 26 28 19Z" fill="#DCBE9B" stroke="#9C7A53" stroke-width="2" />
+                <path d="M36 18C46 6 60 8 58 19C56 28 44 26 36 19Z" fill="#DCBE9B" stroke="#9C7A53" stroke-width="2" />
+                <path d="M26 20L18 34L24 31L27 35L31 21" fill="#C5A059" />
+                <path d="M38 20L46 34L40 31L37 35L33 21" fill="#C5A059" />
+                <circle cx="32" cy="18" r="4" fill="#9C7A53" />
+              </svg>
+            </div>
+
+            <div class="vinyl-disc-stage">
+              <div id="vinyl-disc" class="vinyl-disc animate-spin-slow paused" title="Toca para reproducir o pausar">
+                <div class="vinyl-groove-outer">
+                  <div class="vinyl-groove-inner">
+                    <div class="vinyl-center-label">
+                      <div class="vinyl-center-hole"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="vinyl-text-group">
+              <p class="vinyl-script-line">Un Mensaje</p>
+              <p class="vinyl-serif-line">Especial</p>
+              <span class="vinyl-caps-line">¡PARA TI!</span>
+            </div>
+
+            <button id="audio-toggle-btn" type="button" class="vinyl-play-btn"
+              aria-label="Reproducir o pausar melodía">
+              <svg id="play-icon" viewBox="0 0 24 24">
+                <polygon points="6,4 20,12 6,20"></polygon>
+              </svg>
+              <svg id="pause-icon" class="hidden" viewBox="0 0 24 24">
+                <rect height="16" width="4" x="6" y="4"></rect>
+                <rect height="16" width="4" x="14" y="4"></rect>
+              </svg>
+            </button>
+            <span id="audio-status" class="vinyl-status-hint">Toca para escuchar</span>
+          </div>
+        </div>
+
+        <div class="countdown-section" id="cuenta-regresiva" data-purpose="countdown-container">
+          <div class="countdown-heading-row">
+            <span class="countdown-star" aria-hidden="true">★</span>
+            <h3 class="countdown-heading-text">Comienza la Cuenta Regresiva</h3>
+            <span class="countdown-star" aria-hidden="true">★</span>
+          </div>
+
+          <div class="countdown-frame">
+            <div class="cd-unit">
+              <span id="countdown-days" class="cd-number">120</span>
+              <span class="cd-label">Días</span>
+            </div>
+            <span class="cd-colon" aria-hidden="true">:</span>
+            <div class="cd-unit">
+              <span id="countdown-hours" class="cd-number">02</span>
+              <span class="cd-label">Horas</span>
+            </div>
+            <span class="cd-colon" aria-hidden="true">:</span>
+            <div class="cd-unit">
+              <span id="countdown-minutes" class="cd-number">45</span>
+              <span class="cd-label">Min</span>
+            </div>
+            <span class="cd-colon" aria-hidden="true">:</span>
+            <div class="cd-unit">
+              <span id="countdown-seconds" class="cd-number cd-seconds-highlight">30</span>
+              <span class="cd-label">Seg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wooden-toys-divider">
+          <img src="img/jueguetes.png" alt="Juguetes de madera y regalos en acuarela" class="wooden-toys-img" />
+          <p class="celebrate-script-quote">¡No podemos esperar para celebrar contigo!</p>
+          <span class="heart-divider-icon" aria-hidden="true">♥</span>
+        </div>
+
+      </section>
+
+      <!-- SECCIÓN 3: FORMULARIO DE CONFIRMACIÓN DE ASISTENCIA (RSVP) -->
+      <section class="rsvp-section" id="rsvp" data-purpose="rsvp-section">
+        <img src="img/Guirnalda_banderines.png" alt="Banderines decorativos" class="rsvp-bunting-banner" />
+
+        <div class="rsvp-header-block">
+          <h2 class="rsvp-serif-title">Confirmar Asistencia</h2>
+          <p class="rsvp-serif-deadline">antes del 1 de Junio</p>
+          <span class="heart-divider-icon" aria-hidden="true">♥</span>
+        </div>
+
+        <form id="rsvp-form" class="rsvp-form" data-purpose="rsvp-input-form">
+          <div class="rsvp-field">
+            <label class="rsvp-label" for="guest-name">Tu Nombre</label>
+            <input id="guest-name" type="text" class="rsvp-input" placeholder="Escribe tu nombre completo" required />
+          </div>
+
+          <div class="rsvp-field">
+            <label class="rsvp-label">¿Nos acompañarás a celebrar el cumpleaños de Sofía?</label>
+            <div class="attendance-buttons-stack">
+              <button id="btn-attend-yes" type="button" class="attendance-choice-btn btn-yes is-active">
+                <span>¡SÍ, AHÍ ESTARÉ!</span>
+                <span aria-hidden="true">✓</span>
+              </button>
+              <button id="btn-attend-no" type="button" class="attendance-choice-btn btn-no">
+                <span>LO SIENTO, NO PODRÉ ASISTIR</span>
+              </button>
+            </div>
+            <input id="attendance-value" type="hidden" value="si" />
+          </div>
+
+          <div id="guests-number-container" class="rsvp-field">
+            <label class="rsvp-label" for="guest-count">
+              ¿Cuántos invitados asistirán? <span class="rsvp-label-hint">(Incluyéndote)</span>
+            </label>
+            <input id="guest-count" type="number" min="1" max="15" value="1" class="rsvp-input"
+              placeholder="Número de asistentes" />
+          </div>
+
+          <div class="rsvp-field">
+            <label class="rsvp-label" for="guest-message">
+              Mensaje para Sofía <span class="rsvp-label-hint">(Opcional)</span>
+            </label>
+            <textarea id="guest-message" rows="2" class="rsvp-textarea"
+              placeholder="Escribe un lindo deseo para Sofía..."></textarea>
+          </div>
+
+          <button id="whatsapp-rsvp-btn" type="submit" class="rsvp-submit-btn"
+            aria-label="Enviar confirmación por WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.031 2C6.502 2 2.012 6.486 2.012 12.01c0 1.908.535 3.712 1.547 5.275L2 22l4.89-1.523c1.51.874 3.242 1.34 5.141 1.34 5.529 0 10.02-4.486 10.02-10.007C22.051 6.486 17.56 2 12.031 2zm5.786 14.288c-.244.686-1.42 1.31-1.956 1.374-.51.06-1.156.09-3.71-.97-3.266-1.353-5.344-4.66-5.508-4.877-.162-.218-1.317-1.753-1.317-3.344 0-1.59.833-2.373 1.13-2.695.297-.322.65-.403.868-.403.218 0 .436.002.628.012.203.01.474-.078.74.56.27.65.922 2.253 1.003 2.417.081.163.136.353.027.57-.109.217-.163.353-.326.543-.163.19-.344.425-.49.57-.164.164-.334.343-.144.668.19.327.846 1.393 1.814 2.255 1.246 1.109 2.296 1.453 2.623 1.616.326.163.517.136.707-.082.19-.217.815-.95 1.033-1.276.217-.326.435-.272.733-.163.298.109 1.897.896 2.223 1.06.326.163.543.244.624.38.082.136.082.788-.162 1.474z">
+              </path>
+            </svg>
+            <span>Enviar Confirmación</span>
+          </button>
+
+          <div id="rsvp-success-msg" class="rsvp-feedback-msg hidden" role="status">
+            ¡Gracias! Tu confirmación ha sido recibida con mucho cariño.
+          </div>
+        </form>
+
+        <div class="rsvp-bottom-watercolor">
+          <img src="img/Regalos y globos en acuarela.png" alt="Regalos y globos en acuarela"
+            class="rsvp-gifts-balloons-img" />
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: CUADRÍCULA DE 6 ICONOS DE ACCESO RÁPIDO -->
+      <section class="quick-icons-section" data-purpose="features-grid" aria-label="Accesos rápidos de la invitación">
+        <div class="quick-icons-grid">
+          <a href="#bienvenida" class="quick-icon-item">
+            <div class="quick-icon-box">
+              <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <path d="M3 7l9 6 9-6M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path>
+                <circle cx="12" cy="13" fill="currentColor" r="1.5"></circle>
+              </svg>
+            </div>
+            <span class="quick-icon-label">Invitación<br />Digital</span>
+          </a>
+
+          <a href="#rsvp" class="quick-icon-item">
+            <div class="quick-icon-box">
+              <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <path
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                </path>
+              </svg>
+            </div>
+            <span class="quick-icon-label">Fácil<br />Confirmación</span>
+          </a>
+
+          <a href="#detalles" class="quick-icon-item">
+            <div class="quick-icon-box">
+              <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <rect height="12" rx="2" width="18" x="3" y="8"></rect>
+                <path
+                  d="M12 8v12M3 12h18M12 8H8.5a2.5 2.5 0 110-5C11 3 12 8 12 8zm0 0h3.5a2.5 2.5 0 100-5C13 3 12 8 12 8z">
+                </path>
+              </svg>
+            </div>
+            <span class="quick-icon-label">Detalles del<br />Evento</span>
+          </a>
+
+          <button id="quick-gallery-btn" type="button" class="quick-icon-item">
+            <div class="quick-icon-box">
+              <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <rect height="18" rx="3" width="18" x="3" y="3"></rect>
+                <circle cx="8.5" cy="8.5" fill="currentColor" r="1.5"></circle>
+                <path d="M21 15l-5-5L5 21"></path>
+              </svg>
+            </div>
+            <span class="quick-icon-label">Galería de<br />Fotos</span>
+          </button>
+
+          <a href="#cuenta-regresiva" class="quick-icon-item">
+            <div class="quick-icon-box">
+              <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="9"></circle>
+                <polyline points="12 7 12 12 16 12"></polyline>
+              </svg>
+            </div>
+            <span class="quick-icon-label">Cuenta<br />Regresiva</span>
+          </a>
+
+          <a id="quick-map-link" href="https://maps.google.com/?q=Salon+Jardin+Las+Estrellas" target="_blank"
+            rel="noopener noreferrer" class="quick-icon-item">
+            <div class="quick-icon-box">
+              <svg fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"></path>
+                <circle cx="12" cy="9" fill="currentColor" r="2.5"></circle>
+              </svg>
+            </div>
+            <span class="quick-icon-label">Mapa de<br />Ubicación</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 5: PAPÁS Y BANNER DE FIRMA -->
+      <section class="signature-banner-section" data-purpose="footer-banner">
+        <div class="parents-credit-card">
+          <span class="parents-credit-label">Con el cariño de mis papás:</span>
+          <span class="parents-credit-names">Carla Morales y Diego Vargas</span>
+        </div>
+
+        <div class="sage-signature-banner">
+          <div class="sage-Signature-inner-border" aria-hidden="true"></div>
+
+          <div class="banner-left-balloons" aria-hidden="true">
+            <img src="img/globo_amarillo.png" alt="" />
+            <img src="img/globo_verde.png" alt="" />
+          </div>
+
+          <div class="banner-center-copy">
+            <p class="banner-caps-line">
+              Envía <span class="banner-dot">•</span> Comparte <span class="banner-dot">•</span> Celebra
+            </p>
+            <p class="banner-script-line">~ Todo en un Solo Enlace ~</p>
+          </div>
+
+          <div class="banner-right-bear" aria-hidden="true">
+            <svg viewBox="0 0 60 70" fill="none">
+              <circle cx="16" cy="18" fill="#DEC09A" r="8"></circle>
+              <circle cx="44" cy="18" fill="#DEC09A" r="8"></circle>
+              <ellipse cx="30" cy="45" fill="#C5A47C" rx="18" ry="18"></ellipse>
+              <ellipse cx="30" cy="47" fill="#DEC09A" rx="12" ry="12"></ellipse>
+              <circle cx="30" cy="26" fill="#C5A47C" r="16"></circle>
+              <ellipse cx="30" cy="30" fill="#FAF6EE" rx="7" ry="5"></ellipse>
+              <ellipse cx="30" cy="28" fill="#3D3024" rx="2.5" ry="1.5"></ellipse>
+              <circle cx="24" cy="23" fill="#3D3024" r="1.8"></circle>
+              <circle cx="36" cy="23" fill="#3D3024" r="1.8"></circle>
+              <circle cx="15" cy="56" fill="#DEC09A" r="6"></circle>
+              <circle cx="45" cy="56" fill="#DEC09A" r="6"></circle>
+            </svg>
+          </div>
+        </div>
+
+        <p class="crafted-love-note">Hecho con amor para el 1er Añito de Sofía</p>
+      </section>
+
+    </div>
+
+    <!-- PIE DE PÁGINA BIZFLOW -->
+    <footer class="bizflow-footer" aria-label="BizFlow">
+      <a href="https://wa.me/?text=Hola%20BizFlow%2C%20quisiera%20cotizar%20una%20invitaci%C3%B3n%20digital"
+        target="_blank" rel="noopener noreferrer" title="BizFlow" style="display: inline-block;">
+        <img src="img/Bizflow_logo.png" alt="BizFlow"
+          style="height: 22px; width: auto; max-width: 125px; object-fit: contain; display: block; opacity: 0.92;" />
+      </a>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap; font-family: var(--font-sans); font-size: 0.78rem; color: rgba(250, 246, 238, 0.9);">
+        <span>¿Quieres una invitación como esta?</span>
+        <a href="https://wa.me/?text=Hola%20BizFlow%2C%20quisiera%20cotizar%20una%20invitaci%C3%B3n%20digital"
+          target="_blank" rel="noopener noreferrer"
+          style="font-weight: 700; font-size: 0.78rem; color: #DCBE9B; text-decoration: underline;">
+          <span>Contáctanos</span>
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Botón Flotante de Música -->
+  <button id="floating-music-btn" class="floating-music-btn is-paused" type="button"
+    aria-label="Pausar o reproducir música" title="Reproducir música">
+    <img src="iconos/music.gif" alt="Música de cumpleaños" />
+  </button>
+  <audio id="wedding-music" preload="auto" loop>
+    <source src="music/cancion_boda.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Visor Lightbox para la Foto de Sofía -->
+  <div id="gallery-lightbox" class="hidden" role="dialog" aria-modal="true" aria-label="Visualizador de foto">
+    <button id="lightbox-close" type="button" aria-label="Cerrar visor">&times;</button>
+    <img id="lightbox-img" src="" alt="Sofía - Mi primer añito" />
+  </div>
+
+  <!-- Toast Notification Flotante -->
+  <div id="copy-toast" class="toast-notification" role="status" aria-live="polite">
+    <span>🧸 ¡Confirmación lista!</span>
+  </div>
+
+  <!-- Scripts Modulares -->
+  <script src="js/config.js"></script>
+  <script src="js/envelope.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/rsvp.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/invitation.js"></script>
+</body>
+
+</html>

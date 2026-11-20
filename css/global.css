@@ -1,0 +1,108 @@
+/* ==========================================================================
+   GLOBAL.CSS - PALETA, TIPOGRAFÍA Y ESTILOS BASE
+   INVITACIÓN INFANTIL VINTAGE TEDDY BEAR & WOODEN TOYS
+   ========================================================================== */
+
+:root {
+  /* Paleta Oficial Vintage Teddy Bear & Acuarela (Crema, Verde Salvia, Arena, Madera) */
+  --cream-50: #FDFBF7;
+  --cream-100: #FAF6EE;
+  --cream-200: #F4EDE0;
+  --cream-300: #EBDDC9;
+  --kraft-light: #E9DFCE;
+  --kraft-med: #DECBB2;
+  --kraft-border: #CBB69A;
+
+  --sage-300: #B4C2AC;
+  --sage-400: #94A38C;
+  --sage-500: #7E9175;
+  --sage-600: #6C7E64;
+  --sage-700: #55644F;
+
+  --sand-200: #EFE2CF;
+  --sand-300: #E6D3BA;
+  --sand-400: #DCBE9B;
+  --sand-500: #CDB18C;
+
+  --vintage-gold: #C5A059;
+  --vintage-wood: #9C7A53;
+  --vintage-brown: #7D6040;
+  --vintage-dark: #433D3C;
+  --vintage-gray: #6B6563;
+  --card-white: #FFFFFF;
+
+  /* Tipografías Vintage Script, Serif Editorial y Sans-Serif */
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Reset Global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--cream-100);
+  background-image:
+    radial-gradient(rgba(216, 207, 190, 0.55) 0.85px, transparent 0.85px),
+    linear-gradient(180deg, #FDFBF7 0%, #FAF6EE 35%, #F5EDE0 70%, #FAF6EE 100%);
+  background-size: 18px 18px, 100% 100%;
+  color: var(--vintage-dark);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--sand-300);
+  color: var(--vintage-dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Utilidades generales */
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex !important;
+}

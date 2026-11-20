@@ -1,0 +1,31 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales y respaldos
+*.tmp
+*.temp
+*.log
+*.bak
+*.old
+*.zip
+*.rar
+
+# Dependencias y compilación
+node_modules/
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.*
+
+# Carpeta de referencia de diseño Stitch AI (opcional / boceto base)
+stitch_invitaci_n_web_infantil/
