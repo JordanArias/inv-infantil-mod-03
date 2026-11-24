@@ -7,7 +7,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const configDate =
-    window.INVITATION_CONFIG?.fecha?.fechaHoraISO || "2026-06-15T16:30:00";
+    window.INVITATION_CONFIG?.fecha?.fechaHoraISO || "2026-11-24T18:00:00";
   const targetDate = new Date(configDate);
 
   const daysEl =
@@ -19,18 +19,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const secondsEl =
     document.getElementById("countdown-seconds") || document.getElementById("seconds");
 
+  let intervalId = null;
+
   function updateCountdown() {
     const now = new Date();
     let diff = targetDate.getTime() - now.getTime();
 
-    // Si la fecha ya pasó respecto al reloj del sistema, proyectar hacia adelante
-    // para mantener el efecto demostrativo en vivo de los números
+    // Si la fecha ya llegó o pasó, quedar en 0 sin reiniciar
     if (diff <= 0) {
-      diff =
-        120 * 24 * 60 * 60 * 1000 +
-        2 * 60 * 60 * 1000 +
-        45 * 60 * 1000 +
-        ((60 - now.getSeconds()) % 60) * 1000;
+      diff = 0;
+      if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
     }
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -47,5 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   updateCountdown();
-  setInterval(updateCountdown, 1000);
+  if (targetDate.getTime() > Date.now()) {
+    intervalId = setInterval(updateCountdown, 1000);
+  }
 });

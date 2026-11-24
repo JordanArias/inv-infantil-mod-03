@@ -15,22 +15,22 @@ const INVITATION_CONFIG = {
     subtituloInvitacion: "¡Acompáñanos a celebrar!",
     fraseCierre: "¡No podemos esperar para celebrar contigo!",
     monograma: "S",
-    fechaCorta: "15.06.2026"
+    fechaCorta: "24.11.2026"
   },
   fecha: {
-    diaSemana: "Sábado",
-    diaNumero: 15,
-    mesNombre: "Junio",
-    mesCorto: "JUNIO",
-    mesNumero: 6,
+    diaSemana: "Martes",
+    diaNumero: 24,
+    mesNombre: "Noviembre",
+    mesCorto: "NOVIEMBRE",
+    mesNumero: 11,
     anio: 2026,
-    fechaTexto: "15 de Junio de 2026",
-    fechaLimiteRsvp: "antes del 1 de Junio",
-    horaTexto: "04:30",
-    periodoTexto: "PM",
+    fechaTexto: "24 de Noviembre de 2026",
+    fechaLimiteRsvp: "antes del 20 de Noviembre",
+    horaTexto: "18:00",
+    periodoTexto: "HRS",
     // Fecha y hora en formato ISO para la cuenta regresiva en vivo
-    fechaHoraISO: "2026-06-15T16:30:00",
-    fechaFinISO: "2026-06-15T21:30:00"
+    fechaHoraISO: "2026-11-24T18:00:00",
+    fechaFinISO: "2026-11-24T23:00:00"
   },
   lugar: {
     titulo: "Lugar",
